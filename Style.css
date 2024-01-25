@@ -1,0 +1,117 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            background: url("https://wallpaperaccess.com/full/1900857.jpg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 100vh;            
+            overflow: hidden;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .login-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90%;
+            max-width: 450px;
+            background:transparent;
+            backdrop-filter: blur(20px);
+            padding: 20px 30px;
+            /* box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0; */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .login-form .form-title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 20px 0 30px;
+            color:white;
+        }
+
+        .login-form .form-input{
+            margin: 10px 0;
+        }
+
+        .login-form .form-input label,
+        .login-form .captcha label{
+            display: block;
+            font-size: 15px;
+            color:white;
+            margin-bottom: 10px;
+        }
+
+        .login-form .form-input input{
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid #888;
+            font-size: 15px;
+        }
+
+        .login-form .captcha{
+            margin: 15px 0;
+        }
+
+        .login-form .captcha .preview{
+            color: #f3f708;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            line-height: 40px;
+            letter-spacing: 10px;
+            border: 2px dashed #888;
+            border-radius: 5px;
+            font-family: "monospace";
+        }
+
+        .login-form .captcha .captcha-form{
+            display: flex;
+        }
+
+        .login-form .captcha .captcha-form input{
+            width: 100%;
+            outline: none;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #888;  
+        }
+
+        .login-form .captcha .captcha-form .captcha-refresh{
+            width: 40px;
+            border: none;
+            outline: none;
+            background-color: #888;
+            border-radius: 5px;
+            color: #eee;
+            cursor: pointer;
+        }
+
+        #login-btn{
+            margin-top:5px;
+            width:100%;
+            padding:12px;
+            border:none;
+            outline:none;
+            font-size:15px;
+            text-transform:uppercase;
+            background:#4c81ff;
+            border-radius: 5px;
+            color:#fff;
+            transition: .3s;
+            cursor:pointer;
+        }
+
+        #login-btn:hover{
+            opacity: .8;
+        }
